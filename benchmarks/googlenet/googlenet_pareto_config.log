@@ -1,0 +1,218 @@
+High performance parallel configuration:
+
+CPU:					Leon OS					||					Leon RT
+Block 1
+Round 1:	[Id: 11, Op: Conv_I2C, Shv: 2] , [Id: 13, Op: Pooling, Shv: 2]	||	[Id: 9, Op: Conv-Direct, Shv: 10]	-	 Execution overlap: 78.1053586157%
+Round 2:	[Id: 14, Op: Conv_I2C, Shv: 2]	||	[Id: 10, Op: Conv_Direct, Shv: 10] , [Id: 8, Op: Pooling, Shv: 10]	-	 Execution overlap: 94.2229287105%
+Round 3:	[Id: 12, Op: Conv_Direct, Shv: 12]	||	None	-	 Execution overlap: 0%
+
+Best Node overlap matching strategy for block: 'pivot dominant'
+Best Graph Traversal strategy for block: 'next bear'
+Average Round Execution Overlap: 57.4427624421%
+
+Parallel execution time: 12.217612 ms
+Best linear execution time: 13.216478 ms
+Performance gain: 7.55773209776%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 2
+Round 1:	[Id: 15, Op: Conv_I2C, Shv: 6] , [Id: 20, Op: Pooling, Shv: 6]	||	[Id: 16, Op: Conv_I2C, Shv: 6]	-	 Execution overlap: 98.1129101709%
+Round 2:	[Id: 21, Op: Conv_I2C, Shv: 3]	||	[Id: 17, Op: Conv_Direct, Shv: 9]	-	 Execution overlap: 80.1628319733%
+Round 3:	None	||	[Id: 18, Op: Conv-Direct, Shv: 11]	-	 Execution overlap: 0%
+Round 4:	None	||	[Id: 19, Op: Conv_Direct, Shv: 12]	-	 Execution overlap: 0%
+
+Best Node overlap matching strategy for block: 'coupling dominant'
+Best Graph Traversal strategy for block: 'full bull'
+Average Round Execution Overlap: 44.568935536%
+
+Parallel execution time: 30.846732 ms
+Best linear execution time: 34.982641 ms
+Performance gain: 11.8227466017%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 3
+Round 1:	[Id: 28, Op: Pooling, Shv: 3] , [Id: 29, Op: Conv_I2C, Shv: 3] , [Id: 24, Op: Conv_I2C, Shv: 3]	||	[Id: 23, Op: Conv-Direct, Shv: 9]	-	 Execution overlap: 93.066084032%
+Round 2:	[Id: 25, Op: Conv_Direct, Shv: 10]	||	[Id: 26, Op: Conv_I2C, Shv: 2] , [Id: 27, Op: Conv_Direct, Shv: 2]	-	 Execution overlap: 99.917561864%
+
+Best Node overlap matching strategy for block: 'coupling dominant'
+Best Graph Traversal strategy for block: 'pivot bull'
+Average Round Execution Overlap: 96.491822948%
+
+Parallel execution time: 13.118749 ms
+Best linear execution time: 17.476752 ms
+Performance gain: 24.936000694%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 4
+Round 1:	[Id: 35, Op: Pooling, Shv: 4] , [Id: 36, Op: Conv_I2C, Shv: 4] , [Id: 31, Op: Conv_I2C, Shv: 4]	||	[Id: 30, Op: Conv-Direct, Shv: 8]	-	 Execution overlap: 98.3636611884%
+Round 2:	[Id: 32, Op: Conv_Direct, Shv: 9]	||	[Id: 33, Op: Conv_I2C, Shv: 3] , [Id: 34, Op: Conv_Direct, Shv: 3]	-	 Execution overlap: 76.1857708781%
+
+Best Node overlap matching strategy for block: 'coupling dominant'
+Best Graph Traversal strategy for block: 'pivot bull'
+Average Round Execution Overlap: 87.2747160333%
+
+Parallel execution time: 14.425506 ms
+Best linear execution time: 19.848524 ms
+Performance gain: 27.3220215266%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 5
+Round 1:	[Id: 37, Op: Conv_I2C, Shv: 4]	||	[Id: 40, Op: Conv_I2C, Shv: 8] , [Id: 41, Op: Conv_Direct, Shv: 8] , [Id: 38, Op: Conv_I2C, Shv: 8]	-	 Execution overlap: 93.5800832428%
+Round 2:	[Id: 42, Op: Pooling, Shv: 3] , [Id: 43, Op: Conv_I2C, Shv: 3]	||	[Id: 39, Op: Conv_Direct, Shv: 9]	-	 Execution overlap: 92.6923570282%
+
+Best Node overlap matching strategy for block: 'coupling dominant'
+Best Graph Traversal strategy for block: 'couple bear'
+Average Round Execution Overlap: 93.1362201355%
+
+Parallel execution time: 13.14206 ms
+Best linear execution time: 19.240767 ms
+Performance gain: 31.696797742%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 6
+Round 1:	[Id: 44, Op: Conv_I2C, Shv: 3] , [Id: 49, Op: Pooling, Shv: 3]	||	[Id: 45, Op: Conv-Direct, Shv: 9]	-	 Execution overlap: 90.4793230849%
+Round 2:	[Id: 50, Op: Conv_I2C, Shv: 2]	||	[Id: 46, Op: Conv_Direct, Shv: 10]	-	 Execution overlap: 93.6003474349%
+Round 3:	None	||	[Id: 47, Op: Conv_I2C, Shv: 11]	-	 Execution overlap: 0%
+Round 4:	None	||	[Id: 48, Op: Conv_Direct, Shv: 11]	-	 Execution overlap: 0%
+
+Best Node overlap matching strategy for block: 'pivot dominant'
+Best Graph Traversal strategy for block: 'full bull'
+Average Round Execution Overlap: 46.01991763%
+
+Parallel execution time: 16.596416 ms
+Best linear execution time: 21.010908 ms
+Performance gain: 21.0104770341%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 7
+Round 1:	[Id: 54, Op: Conv_I2C, Shv: 4] , [Id: 56, Op: Pooling, Shv: 4] , [Id: 55, Op: Conv_Direct, Shv: 4] , [Id: 57, Op: Conv_I2C, Shv: 4]	||	[Id: 51, Op: Conv-Direct, Shv: 8]	-	 Execution overlap: 92.8960636241%
+Round 2:	None	||	[Id: 52, Op: Conv-Direct, Shv: 12]	-	 Execution overlap: 0%
+Round 3:	None	||	[Id: 53, Op: Conv_Direct, Shv: 12]	-	 Execution overlap: 0%
+
+Best Node overlap matching strategy for block: 'coupling dominant'
+Best Graph Traversal strategy for block: 'next bear'
+Average Round Execution Overlap: 30.9653545414%
+
+Parallel execution time: 28.090612 ms
+Best linear execution time: 31.474316 ms
+Performance gain: 10.750683192%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 8
+Round 1:	[Id: 64, Op: Pooling, Shv: 4]	||	[Id: 62, Op: Conv_I2C, Shv: 8]	-	 Execution overlap: 54.0471280494%
+Round 2:	[Id: 65, Op: Conv_I2C, Shv: 5]	||	[Id: 63, Op: Conv_Direct, Shv: 7] , [Id: 60, Op: Conv-Direct, Shv: 7]	-	 Execution overlap: 97.7734244623%
+Round 3:	[Id: 59, Op: Conv-Direct, Shv: 9]	||	[Id: 61, Op: Conv_Direct, Shv: 3]	-	 Execution overlap: 94.1567911332%
+
+Best Node overlap matching strategy for block: 'coupling dominant'
+Best Graph Traversal strategy for block: 'next bull'
+Average Round Execution Overlap: 81.9924478816%
+
+Parallel execution time: 18.19433 ms
+Best linear execution time: 20.054132 ms
+Performance gain: 9.27390923726%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 9
+Round 1:	[Id: 69, Op: Conv_I2C, Shv: 3] , [Id: 70, Op: Conv_Direct, Shv: 3] , [Id: 71, Op: Pooling, Shv: 3] , [Id: 72, Op: Conv_I2C, Shv: 3]	||	[Id: 66, Op: Conv-Direct, Shv: 9]	-	 Execution overlap: 96.4000885444%
+Round 2:	None	||	[Id: 67, Op: Conv-Direct, Shv: 12]	-	 Execution overlap: 0%
+Round 3:	None	||	[Id: 68, Op: Conv_Direct, Shv: 12]	-	 Execution overlap: 0%
+
+Best Node overlap matching strategy for block: 'coupling dominant'
+Best Graph Traversal strategy for block: 'full bull'
+Average Round Execution Overlap: 32.1333628481%
+
+Parallel execution time: 22.833048 ms
+Best linear execution time: 25.444259 ms
+Performance gain: 10.2624761051%
+---------------------------------------------------------
+
+Parallelism exploration summary:
+
+Total parallel execution time: 202.210924 ms
+Best total linear execution time: 235.494636 ms
+Block performance gain: 16.4162331791%
+Total network performance gain: 14.1335329608%
+---------------------------------------------------------
+Pareto optimal linear shave configurations top-down from highest performance to highest efficiency
+
+High performance configuration:
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 12 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Conv - 12 shaves
+Layer 5: Direct - 12 shaves
+Layer 6: Conv_Direct - 12 shaves
+Layer 7: LRN - 11 shaves
+Layer 8: Pooling - 12 shaves
+Layer 9: Conv - 12 shaves
+Layer 10: Direct - 12 shaves
+Layer 11: Conv - 10 shaves
+Layer 12: Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv - 12 shaves
+Layer 15: Direct - 12 shaves
+Layer 16: Conv_Direct - 12 shaves
+Layer 17: Pooling - 12 shaves
+Layer 18: Conv - 11 shaves
+Layer 19: Direct - 12 shaves
+Layer 20: Conv - 9 shaves
+Layer 21: Direct - 12 shaves
+Layer 22: Conv - 12 shaves
+Layer 23: Direct - 12 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv - 12 shaves
+Layer 26: Direct - 7 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Pooling - 12 shaves
+Layer 29: Conv - 11 shaves
+Layer 30: Direct - 12 shaves
+Layer 31: Pooling - 12 shaves
+Layer 32: Conv - 12 shaves
+Layer 33: Direct - 10 shaves
+Layer 34: Conv - 12 shaves
+Layer 35: Direct - 11 shaves
+Layer 36: Conv_Direct - 11 shaves
+Layer 37: Conv_I2C - 12 shaves
+Layer 38: Conv_Direct - 12 shaves
+Layer 39: Pooling - 12 shaves
+Layer 40: Conv_I2C - 10 shaves
+Layer 41: Conv - 12 shaves
+Layer 42: Direct - 12 shaves
+Layer 43: Conv - 11 shaves
+Layer 44: Direct - 12 shaves
+Layer 45: Conv_Direct - 12 shaves
+Layer 46: Conv_I2C - 12 shaves
+Layer 47: Conv_Direct - 11 shaves
+Layer 48: Pooling - 11 shaves
+Layer 49: Conv_I2C - 12 shaves
+Layer 50: Conv - 11 shaves
+Layer 51: Direct - 12 shaves
+Layer 52: Conv - 12 shaves
+Layer 53: Direct - 12 shaves
+Layer 54: Conv_Direct - 11 shaves
+Layer 55: Conv_I2C - 12 shaves
+Layer 56: Conv_Direct - 12 shaves
+Layer 57: Pooling - 12 shaves
+Layer 58: Conv_I2C - 12 shaves
+Layer 59: Conv - 12 shaves
+Layer 60: Direct - 12 shaves
+Layer 61: Conv - 12 shaves
+Layer 62: Direct - 12 shaves
+Layer 63: Conv_Direct - 12 shaves
+Layer 64: Conv_I2C - 11 shaves
+Layer 65: Conv_Direct - 12 shaves
+Layer 66: Pooling - 12 shaves
+Layer 67: Conv_I2C - 12 shaves
+Layer 68: Conv - 12 shaves
+Layer 69: Direct - 12 shaves
+Layer 70: Conv - 12 shaves
+Layer 71: Direct - 11 shaves
+Layer 72: Conv_Direct - 12 shaves
+Layer 73: Conv_I2C - 12 shaves
+Layer 74: Conv_Direct - 6 shaves
+
+Execution Time: 235.494636 ms
+Energy Consumption: 0.0 mJ
+--------------------------------------------------
+

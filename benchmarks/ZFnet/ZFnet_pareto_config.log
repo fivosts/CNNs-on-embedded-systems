@@ -1,0 +1,1140 @@
+Pareto optimal linear shave configurations top-down from highest performance to highest efficiency
+
+High performance configuration:
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 12 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.939514 ms
+Energy Consumption: 137391.348282 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 12 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.939604 ms
+Energy Consumption: 137388.2534 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 12 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.940644 ms
+Energy Consumption: 137385.21754 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 11 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.941994 ms
+Energy Consumption: 137355.447307 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 11 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.942084 ms
+Energy Consumption: 137352.352425 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 11 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.943124 ms
+Energy Consumption: 137349.316566 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.945587 ms
+Energy Consumption: 137309.428786 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.945677 ms
+Energy Consumption: 137306.333904 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.946717 ms
+Energy Consumption: 137303.298044 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.947011 ms
+Energy Consumption: 137273.582168 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.947101 ms
+Energy Consumption: 137270.487286 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.948141 ms
+Energy Consumption: 137267.451426 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.949371 ms
+Energy Consumption: 137223.934549 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.949461 ms
+Energy Consumption: 137220.839667 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.949721 ms
+Energy Consumption: 137188.785146 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.949811 ms
+Energy Consumption: 137185.690264 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.950851 ms
+Energy Consumption: 137182.654405 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 8 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.958521 ms
+Energy Consumption: 137181.779147 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 6 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.972921 ms
+Energy Consumption: 137179.894518 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.980177 ms
+Energy Consumption: 137173.994602 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.980267 ms
+Energy Consumption: 137170.89972 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.981307 ms
+Energy Consumption: 137167.86386 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 8 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 98.988977 ms
+Energy Consumption: 137166.988602 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 6 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 12 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.003377 ms
+Energy Consumption: 137165.103974 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 12 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.009808 ms
+Energy Consumption: 130722.075003 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 12 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.009898 ms
+Energy Consumption: 130718.980121 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 12 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.010938 ms
+Energy Consumption: 130715.944261 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 11 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.012288 ms
+Energy Consumption: 130686.174028 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 11 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.012378 ms
+Energy Consumption: 130683.079146 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 11 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.013418 ms
+Energy Consumption: 130680.043286 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.015881 ms
+Energy Consumption: 130640.155506 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.015971 ms
+Energy Consumption: 130637.060624 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.017011 ms
+Energy Consumption: 130634.024765 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.017305 ms
+Energy Consumption: 130604.308889 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.017395 ms
+Energy Consumption: 130601.214007 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.018435 ms
+Energy Consumption: 130598.178147 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.019665 ms
+Energy Consumption: 130554.66127 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.019755 ms
+Energy Consumption: 130551.566388 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.020015 ms
+Energy Consumption: 130519.511867 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.020105 ms
+Energy Consumption: 130516.416985 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.021145 ms
+Energy Consumption: 130513.381125 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 8 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.028815 ms
+Energy Consumption: 130512.505868 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 6 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.043215 ms
+Energy Consumption: 130510.621239 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.050471 ms
+Energy Consumption: 130504.721323 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.050561 ms
+Energy Consumption: 130501.626441 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.051601 ms
+Energy Consumption: 130498.590581 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 8 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.059271 ms
+Energy Consumption: 130497.715323 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 6 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 12 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.073671 ms
+Energy Consumption: 130495.830695 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.530138 ms
+Energy Consumption: 130476.383111 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.530228 ms
+Energy Consumption: 130473.288229 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.531268 ms
+Energy Consumption: 130470.25237 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.532498 ms
+Energy Consumption: 130426.735493 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.532588 ms
+Energy Consumption: 130423.64061 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.532848 ms
+Energy Consumption: 130391.58609 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.532938 ms
+Energy Consumption: 130388.491208 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.533978 ms
+Energy Consumption: 130385.455348 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 8 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.541648 ms
+Energy Consumption: 130384.58009 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 6 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.556048 ms
+Energy Consumption: 130382.695462 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 10 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.563304 ms
+Energy Consumption: 130376.795545 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 9 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.563394 ms
+Energy Consumption: 130373.700663 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 9 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.564434 ms
+Energy Consumption: 130370.664804 mJ
+--------------------------------------------------
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 8 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.572104 ms
+Energy Consumption: 130369.789546 mJ
+--------------------------------------------------
+
+High efficiency configuration:
+
+Layer 1: Convolution - 12 shaves
+Layer 2: Pooling - 4 shaves
+Layer 3: LRN - 12 shaves
+Layer 4: Convolution - 12 shaves
+Layer 5: Pooling - 6 shaves
+Layer 6: LRN - 11 shaves
+Layer 7: Convolution - 11 shaves
+Layer 8: Convolution - 12 shaves
+Layer 9: Convolution - 12 shaves
+Layer 10: Pooling - 8 shaves
+Layer 11: InnerProduct - 3 shaves
+Layer 12: InnerProduct - 3 shaves
+Layer 13: InnerProduct - 3 shaves
+
+Execution Time: 99.586504 ms
+Energy Consumption: 130367.904917 mJ
+--------------------------------------------------
+

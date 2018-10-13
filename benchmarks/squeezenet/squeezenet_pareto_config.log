@@ -1,0 +1,4592 @@
+High performance parallel configuration:
+
+CPU:					Leon OS					||					Leon RT
+Block 1
+Round 1:	[Id: 5, Op: Conv_I2C, Shv: 9]	||	[Id: 4, Op: Conv_Direct, Shv: 3]	-	 Execution overlap: 94.0563426222%
+
+Best Node overlap matching strategy for block: 'None'
+Best Graph Traversal strategy for block: 'None'
+Average Round Execution Overlap: 94.0563426222%
+
+Parallel execution time: 4.66006 ms
+Best linear execution time: 6.165038 ms
+Performance gain: 24.4114959227%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 2
+Round 1:	[Id: 8, Op: Conv_Direct, Shv: 3]	||	[Id: 7, Op: Conv_I2C, Shv: 9]	-	 Execution overlap: 98.8118485648%
+
+Best Node overlap matching strategy for block: 'None'
+Best Graph Traversal strategy for block: 'None'
+Average Round Execution Overlap: 98.8118485648%
+
+Parallel execution time: 5.541802 ms
+Best linear execution time: 6.317395 ms
+Performance gain: 12.2771015585%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 3
+Round 1:	[Id: 12, Op: Conv_I2C, Shv: 9]	||	[Id: 11, Op: Conv_Direct, Shv: 3]	-	 Execution overlap: 73.9959271731%
+
+Best Node overlap matching strategy for block: 'None'
+Best Graph Traversal strategy for block: 'None'
+Average Round Execution Overlap: 73.9959271731%
+
+Parallel execution time: 5.470893 ms
+Best linear execution time: 5.880071 ms
+Performance gain: 6.95872549838%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 4
+Round 1:	[Id: 15, Op: Conv_Direct, Shv: 11]	||	[Id: 14, Op: Pooling, Shv: 1]	-	 Execution overlap: 80.906047035%
+
+Best Node overlap matching strategy for block: 'None'
+Best Graph Traversal strategy for block: 'None'
+Average Round Execution Overlap: 80.906047035%
+
+Parallel execution time: 1.229892 ms
+Best linear execution time: 1.497907 ms
+Performance gain: 17.8926328537%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 5
+Round 1:	[Id: 19, Op: Conv_Direct, Shv: 5]	||	[Id: 18, Op: Conv_I2C, Shv: 7]	-	 Execution overlap: 93.3207171585%
+
+Best Node overlap matching strategy for block: 'None'
+Best Graph Traversal strategy for block: 'None'
+Average Round Execution Overlap: 93.3207171585%
+
+Parallel execution time: 3.758667 ms
+Best linear execution time: 4.601302 ms
+Performance gain: 18.3129688075%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 6
+Round 1:	[Id: 22, Op: Conv_Direct, Shv: 4]	||	[Id: 21, Op: Conv_I2C, Shv: 8]	-	 Execution overlap: 85.6009305941%
+
+Best Node overlap matching strategy for block: 'None'
+Best Graph Traversal strategy for block: 'None'
+Average Round Execution Overlap: 85.6009305941%
+
+Parallel execution time: 3.62779 ms
+Best linear execution time: 4.362528 ms
+Performance gain: 16.8420237074%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 7
+Round 1:	[Id: 25, Op: Pooling, Shv: 1]	||	[Id: 24, Op: Conv_Direct, Shv: 11]	-	 Execution overlap: 59.9628181262%
+
+Best Node overlap matching strategy for block: 'None'
+Best Graph Traversal strategy for block: 'None'
+Average Round Execution Overlap: 59.9628181262%
+
+Parallel execution time: 1.631978 ms
+Best linear execution time: 1.68129 ms
+Performance gain: 2.932985981%
+---------------------------------------------------------
+CPU:					Leon OS					||					Leon RT
+Block 8
+Round 1:	[Id: 28, Op: Conv_Direct, Shv: 6]	||	[Id: 27, Op: Conv_I2C, Shv: 6]	-	 Execution overlap: 98.7416161196%
+
+Best Node overlap matching strategy for block: 'None'
+Best Graph Traversal strategy for block: 'None'
+Average Round Execution Overlap: 98.7416161196%
+
+Parallel execution time: 1.418645 ms
+Best linear execution time: 2.053685 ms
+Performance gain: 30.9219768368%
+---------------------------------------------------------
+
+Parallelism exploration summary:
+
+Total parallel execution time: 80.91776 ms
+Best total linear execution time: 86.137249 ms
+Block performance gain: 16.0307576202%
+Total network performance gain: 6.05950278259%
+---------------------------------------------------------
+Pareto optimal linear shave configurations top-down from highest performance to highest efficiency
+
+High performance configuration:
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 12 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 12 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.137249 ms
+Energy Consumption: 123370.254056 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 12 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.137649 ms
+Energy Consumption: 123255.94747 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 11 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 12 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.138209 ms
+Energy Consumption: 123252.011919 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 12 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.138376 ms
+Energy Consumption: 123154.267481 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 11 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.138609 ms
+Energy Consumption: 123137.705332 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.138776 ms
+Energy Consumption: 123039.960895 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.139666 ms
+Energy Consumption: 123011.761825 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.142903 ms
+Energy Consumption: 122977.926578 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 11 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 9 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.143649 ms
+Energy Consumption: 122971.246693 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 9 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.143816 ms
+Energy Consumption: 122873.502256 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.143986 ms
+Energy Consumption: 122865.129389 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 9 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.144706 ms
+Energy Consumption: 122845.303185 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.144876 ms
+Energy Consumption: 122836.930319 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 12 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.145003 ms
+Energy Consumption: 122812.165163 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 11 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.145236 ms
+Energy Consumption: 122795.603014 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.145403 ms
+Energy Consumption: 122697.858577 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.146293 ms
+Energy Consumption: 122669.659506 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.14953 ms
+Energy Consumption: 122635.82426 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.150613 ms
+Energy Consumption: 122523.027071 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.151503 ms
+Energy Consumption: 122494.828 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.15474 ms
+Energy Consumption: 122460.992754 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.156543 ms
+Energy Consumption: 122439.325072 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.159347 ms
+Energy Consumption: 122438.441854 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.159807 ms
+Energy Consumption: 122407.976614 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.16161 ms
+Energy Consumption: 122386.308932 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.164387 ms
+Energy Consumption: 122382.938926 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.167651 ms
+Energy Consumption: 122351.590467 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.169454 ms
+Energy Consumption: 122329.922785 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.174384 ms
+Energy Consumption: 122329.668939 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.175664 ms
+Energy Consumption: 122301.395829 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.177467 ms
+Energy Consumption: 122279.728147 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_Direct - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.179451 ms
+Energy Consumption: 122276.652799 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 10 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.184447 ms
+Energy Consumption: 122269.212071 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 12 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.184574 ms
+Energy Consumption: 122244.446916 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 11 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.184807 ms
+Energy Consumption: 122227.884767 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.184974 ms
+Energy Consumption: 122130.14033 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.185864 ms
+Energy Consumption: 122101.941259 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 10 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.189101 ms
+Energy Consumption: 122068.106013 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.190184 ms
+Energy Consumption: 121955.308824 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.191074 ms
+Energy Consumption: 121927.109753 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.194311 ms
+Energy Consumption: 121893.274507 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.196114 ms
+Energy Consumption: 121871.606825 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.198918 ms
+Energy Consumption: 121870.723607 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.199378 ms
+Energy Consumption: 121840.258366 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.201181 ms
+Energy Consumption: 121818.590685 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.203958 ms
+Energy Consumption: 121815.220679 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.207222 ms
+Energy Consumption: 121783.87222 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.209025 ms
+Energy Consumption: 121762.204538 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.213955 ms
+Energy Consumption: 121761.950692 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.215235 ms
+Energy Consumption: 121733.677582 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.217038 ms
+Energy Consumption: 121712.0099 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.219022 ms
+Energy Consumption: 121708.934551 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.225232 ms
+Energy Consumption: 121680.407595 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.227035 ms
+Energy Consumption: 121658.739913 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 8 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.235455 ms
+Energy Consumption: 121654.451989 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.238792 ms
+Energy Consumption: 121635.922646 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.251425 ms
+Energy Consumption: 121635.297708 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.309929 ms
+Energy Consumption: 121632.572611 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 8 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.318349 ms
+Energy Consumption: 121628.284687 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.321686 ms
+Energy Consumption: 121609.755344 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_Direct - 12 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.334319 ms
+Energy Consumption: 121609.130406 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 9 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.353382 ms
+Energy Consumption: 121546.747738 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.354272 ms
+Energy Consumption: 121518.548668 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.357509 ms
+Energy Consumption: 121484.713421 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.359312 ms
+Energy Consumption: 121463.04574 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 8 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.362116 ms
+Energy Consumption: 121462.162521 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.362576 ms
+Energy Consumption: 121431.697281 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 12 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.364379 ms
+Energy Consumption: 121410.029599 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.367156 ms
+Energy Consumption: 121406.659593 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.37042 ms
+Energy Consumption: 121375.311134 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.372223 ms
+Energy Consumption: 121353.643453 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 12 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.377153 ms
+Energy Consumption: 121353.389606 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.378433 ms
+Energy Consumption: 121325.116496 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.380236 ms
+Energy Consumption: 121303.448814 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.38222 ms
+Energy Consumption: 121300.373466 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.38843 ms
+Energy Consumption: 121271.846509 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.390233 ms
+Energy Consumption: 121250.178828 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 8 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.398653 ms
+Energy Consumption: 121245.890904 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.40199 ms
+Energy Consumption: 121227.36156 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.414623 ms
+Energy Consumption: 121226.736622 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.473127 ms
+Energy Consumption: 121224.011526 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 9 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.475557 ms
+Energy Consumption: 121213.593466 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.484884 ms
+Energy Consumption: 121201.194259 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.497517 ms
+Energy Consumption: 121200.569321 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 9 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.558451 ms
+Energy Consumption: 121187.426164 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.560379 ms
+Energy Consumption: 121175.265932 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 8 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.568799 ms
+Energy Consumption: 121170.978008 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.572136 ms
+Energy Consumption: 121152.448664 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_Direct - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.584769 ms
+Energy Consumption: 121151.823726 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 12 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.604214 ms
+Energy Consumption: 121134.683616 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 12 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.606198 ms
+Energy Consumption: 121131.608267 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 6 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.612408 ms
+Energy Consumption: 121103.081311 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.614211 ms
+Energy Consumption: 121081.413629 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 8 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.622631 ms
+Energy Consumption: 121077.125705 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.625968 ms
+Energy Consumption: 121058.596362 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.638601 ms
+Energy Consumption: 121057.971424 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 8 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 8 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.694738 ms
+Energy Consumption: 121057.25231 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 12 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.697105 ms
+Energy Consumption: 121055.246327 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 8 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.698075 ms
+Energy Consumption: 121038.722967 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.701384 ms
+Energy Consumption: 121020.585129 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 8 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.709804 ms
+Energy Consumption: 121016.297205 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.713141 ms
+Energy Consumption: 120997.767862 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.725774 ms
+Energy Consumption: 120997.142924 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.784278 ms
+Energy Consumption: 120994.417827 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 9 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.786708 ms
+Energy Consumption: 120983.999768 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.796035 ms
+Energy Consumption: 120971.60056 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.808668 ms
+Energy Consumption: 120970.975622 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 8 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.868221 ms
+Energy Consumption: 120963.810071 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 9 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 12 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.869602 ms
+Energy Consumption: 120957.832466 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.87153 ms
+Energy Consumption: 120945.672233 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 8 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.87995 ms
+Energy Consumption: 120941.384309 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.883287 ms
+Energy Consumption: 120922.854966 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.89592 ms
+Energy Consumption: 120922.230028 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.954424 ms
+Energy Consumption: 120919.504931 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 9 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.956854 ms
+Energy Consumption: 120909.086872 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.966181 ms
+Energy Consumption: 120896.687664 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 86.978814 ms
+Energy Consumption: 120896.062726 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.008431 ms
+Energy Consumption: 120883.209057 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.021064 ms
+Energy Consumption: 120882.58412 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 9 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 8 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.052381 ms
+Energy Consumption: 120882.294632 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 9 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.079568 ms
+Energy Consumption: 120879.859023 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 9 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 11 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.081998 ms
+Energy Consumption: 120869.440963 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.091325 ms
+Energy Consumption: 120857.041756 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 11 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.103958 ms
+Energy Consumption: 120856.416818 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 9 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.164892 ms
+Energy Consumption: 120843.273661 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 9 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.177525 ms
+Energy Consumption: 120842.648723 mJ
+--------------------------------------------------
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 6 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 7 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.272618 ms
+Energy Consumption: 120829.044752 mJ
+--------------------------------------------------
+
+High efficiency configuration:
+
+Layer 1: Conv_Direct - 11 shaves
+Layer 2: Pooling - 5 shaves
+Layer 3: Conv_Direct - 8 shaves
+Layer 4: Conv_Direct - 11 shaves
+Layer 5: Conv_Direct - 11 shaves
+Layer 6: Conv_Direct - 8 shaves
+Layer 7: Conv_Direct - 11 shaves
+Layer 8: Conv_Direct - 11 shaves
+Layer 9: Pooling - 5 shaves
+Layer 10: Conv_Direct - 11 shaves
+Layer 11: Conv_Direct - 12 shaves
+Layer 12: Conv_Direct - 12 shaves
+Layer 13: Conv_Direct - 11 shaves
+Layer 14: Conv_Direct - 12 shaves
+Layer 15: Conv_Direct - 12 shaves
+Layer 16: Pooling - 9 shaves
+Layer 17: Conv_I2C - 6 shaves
+Layer 18: Conv_Direct - 12 shaves
+Layer 19: Conv_Direct - 12 shaves
+Layer 20: Conv_I2C - 7 shaves
+Layer 21: Conv_Direct - 12 shaves
+Layer 22: Conv_Direct - 12 shaves
+Layer 23: Conv_I2C - 9 shaves
+Layer 24: Conv_Direct - 12 shaves
+Layer 25: Conv_Direct - 12 shaves
+Layer 26: Conv_I2C - 6 shaves
+Layer 27: Conv_Direct - 12 shaves
+Layer 28: Conv_Direct - 12 shaves
+Layer 29: Conv_Direct - 12 shaves
+Layer 30: Pooling - 12 shaves
+
+Execution Time: 87.285251 ms
+Energy Consumption: 120828.419814 mJ
+--------------------------------------------------
+
