@@ -1,0 +1,21 @@
+SECTIONS {
+
+  /*Setting up shave slices memory with absolute addresses*/
+  . = 0x80400000;
+  .dyn.text ALIGN(4) : {
+        *(S.text*)
+        *(S.__TEXT__sect)
+        *(S.__MAIN__sect)
+        *(S.init*)
+  }
+  . = 0x80500000;
+  .dyn.data : {
+        *(S.data*)
+        *(S.rodata*)
+        *(S.__DATA__sect*)
+        *(S.__STACK__sect*)
+        *(S.__static_data*)
+        *(S.__HEAP__sect*)
+        *(S.__T__*)
+  }
+}
